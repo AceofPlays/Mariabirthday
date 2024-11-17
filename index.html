@@ -1,0 +1,218 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <!-- Link to Google Fonts for a festive font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive; /* Festive font */
+            text-align: center;
+            background: linear-gradient(135deg, #ffcc99, #ff99cc); /* Festive background gradient */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        #landing {
+            display: block;
+        }
+        #gallery, #wish, #wish-button, #collage, #youtube-music {
+            display: none;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-top: 20vh;
+            animation: fadeIn 2s ease-in-out;
+            color: #fff;
+        }
+        #landing button, #wish-button button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        #landing button:hover, #wish-button button:hover {
+            transform: scale(1.1);
+        }
+        .photo {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+        .photo img {
+            width: 90%;
+            max-width: 400px;
+            margin: 20px auto;
+            display: block;
+        }
+        #collage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        #collage img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        #wish {
+            font-size: 1.2em;
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- YouTube Background Music -->
+    <div id="youtube-music">
+        <iframe 
+            id="youtube-iframe"
+            width="0" 
+            height="0" 
+            src="https://www.youtube.com/embed/nxNEoOjVc6c?autoplay=1&loop=1&playlist=nxNEoOjVc6c"
+            frameborder="0" 
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Landing Section -->
+    <div id="landing">
+        <h1>Welcome to Your Surprise!</h1>
+        <button onclick="startExperience()">Let’s go</button>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <div id="gallery">
+        <div class="photo"><img src="Maria-07.jpg" alt="Photo 1"></div>
+        <div class="photo"><img src="Maria-02.jpg" alt="Photo 2"></div>
+        <div class="photo"><img src="Maria-01.jpg" alt="Photo 3"></div>
+        <div class="photo"><img src="Maria-06.jpg" alt="Photo 4"></div>
+        <div class="photo"><img src="Maria-05.PNG" alt="Photo 5"></div>
+        <div class="photo"><img src="Maria-03.JPG" alt="Photo 6"></div>
+        <div class="photo"><img src="Maria-08.jpg" alt="Photo 7"></div>
+        <div class="photo"><img src="Maria-09.jpg" alt="Photo 8"></div>
+        <div class="photo"><img src="Maria-10.jpg" alt="Photo 9"></div>
+        <div class="photo"><img src="Maria-11.jpg" alt="Photo 10"></div>
+        <div class="photo"><img src="Maria-12.jpg" alt="Photo 11"></div>
+        <div class="photo"><img src="Maria-13.jpg" alt="Photo 12"></div>
+        <div class="photo"><img src="Maria-14.jpg" alt="Photo 13"></div>
+        <div class="photo"><img src="Maria-15.jpg" alt="Photo 14"></div>
+    </div>
+
+    <!-- Collage Section -->
+    <div id="collage">
+        <img src="Maria-07.jpg" alt="Photo 1">
+        <img src="Maria-02.jpg" alt="Photo 2">
+        <img src="Maria-01.jpg" alt="Photo 3">
+        <img src="Maria-06.jpg" alt="Photo 4">
+        <img src="Maria-05.PNG" alt="Photo 5">
+        <img src="Maria-03.JPG" alt="Photo 6">
+        <img src="Maria-08.jpg" alt="Photo 7">
+        <img src="Maria-09.jpg" alt="Photo 8">
+        <img src="Maria-10.jpg" alt="Photo 9">
+        <img src="Maria-11.jpg" alt="Photo 10">
+        <img src="Maria-12.jpg" alt="Photo 11">
+        <img src="Maria-13.jpg" alt="Photo 12">
+        <img src="Maria-14.jpg" alt="Photo 13">
+        <img src="Maria-15.jpg" alt="Photo 14">
+
+    </div>
+
+    <!-- Final Button to Reveal the Birthday Wish -->
+    <div id="wish-button">
+        <button onclick="revealWish()">Lire Le souhait</button>
+    </div>
+
+    <!-- Birthday Wish Section -->
+    <div id="wish">
+        <p id="wish-text">
+
+        
+            On commence formellement: Joyeux anniversaire, petit sucre, petite V, alias Mande Daenerys, 8e Merveille !
+            Je réfléchissais à une manière originale de te souhaiter un joyeux anniversaire, et j’ai opté pour cette idée. J’espère qu’elle te plaira ! Si ce n’est pas le cas, prépare-toi, parce que je vais te mordre, haha.
+            
+            Chaque année qui passe me rappelle que tu grandis vraiment. C’est dur à imaginer, car pour moi, tu restes toujours ma petite V. Quand quelque chose ne va pas dans ma vie, je me dis toujours : « OK Major, tu as Dieu, ta famille et Maria, donc tout ira bien. » Tu es une bénédiction pour moi. Peu importe la distance ou nos différends, sache que je t’aime d’un amour infini. ❤️
+            
+            Pour tes 24 ans d’âge, d’existence, de vie, je veux te dire merci en 24 langues différentes. Commençons par celles que je connais : Merci, Thank you, Asante, Teşekkür ederim, Arigato, Danke, Xièxiè, Kamsahamnida... pour les autres, je vais les inventer, haha. Merci d’être toujours là pour moi, même quand tu n’y es pas obligée. Merci de m’accepter avec mes défauts. Merci d’être une véritable amie et une sœur. Merci de m’aimer d’un amour qui dépasse tout ce que je peux imaginer. Merci d’être toi. ❤️
+            
+            Je voulais aussi te dire que je suis fier de toi. Fier de la personne que tu deviens, de la maturité dont tu fais preuve, et de la femme exceptionnelle que tu es en train de devenir. Je suis très, très fier de toi. 😍
+            
+            Pour ce nouvel âge, je te souhaite tout ce que le monde a de plus beau, de plus précieux, de meilleur à offrir. Tu mérites tous les trésors et merveilles qui existent. Que cette nouvelle année soit pour toi le début d’un nouveau chapitre, où tous les projets que tu as soigneusement écrits dans ton carnet voient enfin le jour. Aie confiance en toi et en ce que Dieu a mis en toi. Peu importe les défis ou les situations, n’oublie jamais que Dieu a des projets merveilleux pour toi. Ces épreuves ne sont que des assaisonnements qui rendront le plat final encore plus savoureux.
+            
+            Je t’aime énormément, beaucoup. ❤️
+            
+            Encore une fois *JOYEUX ANNIVERSAIRE MARIALLE MANDE 8E MERVEILLE 🎂🎉🥳*
+            
+            
+             
+            🎉🍒🍓🍇🍒🍓🎉
+            🎉🍦🎂🎈🎂🍦🎉
+            🎉🍭🍬🎁🍬🍭🎉
+            🎉✨💖🎉💖✨🎉
+            🎂🎉🎉🎉🎉🎉🎂
+            🎂🎉🎉🎉🎉🎉🎂
+            🎉🍒🍓🍇🍒🍓🎉
+            🎉🍦🎂🎈🎂🍦🎉
+            🎉🍭🍬🎁🍬🍭🎉
+            🎉✨💖🎉💖✨🎉
+            🎂🎉🎉🎉🎉🎉🎉
+            
+            Major..
+            
+    </div>
+
+    <script>
+        function startExperience() {
+            // Start YouTube background music
+            const youtubeIframe = document.getElementById("youtube-iframe");
+            youtubeIframe.src = "https://www.youtube.com/embed/nxNEoOjVc6c?autoplay=1&loop=1&playlist=nxNEoOjVc6c";
+
+            // Start the gallery experience
+            document.getElementById("landing").style.display = "none";
+            document.getElementById("gallery").style.display = "block";
+            showPhotos();
+        }
+
+        let photoIndex = 0;
+        function showPhotos() {
+            const photos = document.querySelectorAll('.photo');
+
+            window.addEventListener('scroll', () => {
+                if (photoIndex < photos.length) {
+                    const nextPhoto = photos[photoIndex];
+
+                    if (nextPhoto.getBoundingClientRect().top < window.innerHeight) {
+                        nextPhoto.style.opacity = 1;
+                        photoIndex++;
+                    }
+
+                    if (photoIndex === photos.length) {
+                        document.getElementById("collage").style.display = "flex";
+                        document.getElementById("wish-button").style.display = "block";
+                    }
+                }
+            });
+        }
+
+        function revealWish() {
+            document.getElementById("wish").style.display = "block";
+            document.getElementById("wish-audio").play();
+            document.getElementById("wish-button").style.display = "none";
+        }
+    </script>
+</body>
+</html>
