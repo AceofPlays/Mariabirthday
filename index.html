@@ -165,44 +165,44 @@
             
     </div>
 
-    <script>
-        function startExperience() {
-            // Start YouTube background music
-            const youtubeIframe = document.getElementById("youtube-iframe");
-            youtubeIframe.src = "https://www.youtube.com/embed/nxNEoOjVc6c?autoplay=1&loop=1&playlist=nxNEoOjVc6c";
+<script>
+    function startExperience() {
+        // Start YouTube background music only after user interaction
+        const youtubeIframe = document.getElementById("youtube-iframe");
+        youtubeIframe.src = "https://www.youtube.com/embed/nxNEoOjVc6c?autoplay=1&loop=1&playlist=nxNEoOjVc6c";
 
-            // Start the gallery experience
-            document.getElementById("landing").style.display = "none";
-            document.getElementById("gallery").style.display = "block";
-            showPhotos();
-        }
+        // Start the gallery experience
+        document.getElementById("landing").style.display = "none";
+        document.getElementById("gallery").style.display = "block";
+        showPhotos();
+    }
 
-        let photoIndex = 0;
-        function showPhotos() {
-            const photos = document.querySelectorAll('.photo');
+    let photoIndex = 0;
+    function showPhotos() {
+        const photos = document.querySelectorAll('.photo');
 
-            window.addEventListener('scroll', () => {
-                if (photoIndex < photos.length) {
-                    const nextPhoto = photos[photoIndex];
+        window.addEventListener('scroll', () => {
+            if (photoIndex < photos.length) {
+                const nextPhoto = photos[photoIndex];
 
-                    if (nextPhoto.getBoundingClientRect().top < window.innerHeight) {
-                        nextPhoto.style.opacity = 1;
-                        photoIndex++;
-                    }
-
-                    if (photoIndex === photos.length) {
-                        document.getElementById("collage").style.display = "flex";
-                        document.getElementById("wish-button").style.display = "block";
-                    }
+                if (nextPhoto.getBoundingClientRect().top < window.innerHeight) {
+                    nextPhoto.style.opacity = 1;
+                    photoIndex++;
                 }
-            });
-        }
 
-        function revealWish() {
-            document.getElementById("wish").style.display = "block";
-            document.getElementById("wish-audio").play();
-            document.getElementById("wish-button").style.display = "none";
-        }
-    </script>
+                if (photoIndex === photos.length) {
+                    document.getElementById("collage").style.display = "flex";
+                    document.getElementById("wish-button").style.display = "block";
+                }
+            }
+        });
+    }
+
+    function revealWish() {
+        document.getElementById("wish").style.display = "block";
+        document.getElementById("wish-button").style.display = "none";
+    }
+</script>
+
 </body>
 </html>
